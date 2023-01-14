@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "FG";
+  src: url(/font/FRABK_regular.TTF);
+}
+
+@font-face {
+  font-family: "FG-semibold";
+  src: url(/font/framd_semibold.ttf);
+}
+
+@font-face {
+  font-family: "FG-narrow";
+  src: url(/font/framd_narrow.ttf);
+}

@@ -1,0 +1,49 @@
+img {
+  width: 4rem;
+}
+
+body {
+  background-color: #adb5bd;
+}
+
+nav {
+  z-index: 99;
+}
+
+.nav-item a {
+  color: white;
+  margin-right: 1rem;
+}
+
+#home {
+  border-bottom: 2px solid white;
+}
+
+.text-us button {
+  background-color: transparent;
+  border: 2px solid white;
+  outline: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 4px;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .text-us button {
+    padding: 0.3rem 1.2rem;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}

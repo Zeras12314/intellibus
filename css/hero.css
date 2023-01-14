@@ -1,0 +1,48 @@
+.slider {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  min-height: 500px !important;
+  top: 0;
+  left: 0;
+}
+
+.carousel-control-prev {
+  transform: translateX(-4rem);
+}
+
+.carousel-control-next {
+  transform: translateX(4rem);
+}
+
+.carousel-text {
+  bottom: 50px;
+  color: white;
+  position: absolute;
+  z-index: 999;
+  font-weight: 100;
+}
+
+.carousel-text {
+  width: 350px;
+}
+
+.carousel-text h2:first-child {
+  font-weight: 100;
+}
+
+.carousel-text h2:nth-child(2) {
+  font-weight: 700;
+}
+
+.cta-work {
+  font-family: "FG-semibold";
+  color: #fdff2c;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .carousel-item img {
+    content: url("/assets/images/slider-1.webp");
+  }
+}
