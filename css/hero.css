@@ -14,9 +14,9 @@
   bottom: 3rem;
   color: white;
   position: absolute;
-  z-index: 999;
+  z-index: 9;
   font-weight: 100;
-  width: 50%;
+  width: 380px;
   max-width: 1296px;
   padding-left: 3%;
 }
@@ -104,6 +104,10 @@ h2 {
     bottom: 100px;
     padding-left: 0%;
     width: 50%;
+  }
+
+  .cta-work {
+    font-size: 20px;
   }
 
   .carousel-control-prev {
