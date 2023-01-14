@@ -10,6 +10,10 @@ nav {
   z-index: 99;
 }
 
+/* .navbar {
+  position: absolute;
+} */
+
 .nav-item a {
   color: white;
   margin-right: 1rem;
@@ -43,13 +47,12 @@ nav {
     padding: 0.3rem 1.2rem;
   }
 
-  .navbar-collapse {
-    background-color: transparent;
-    padding: 0;
+  @media (min-width: 992px) {
+    .navbar-collapse {
+      background-color: transparent;
+      padding: 0;
+    }
   }
-}
-
-@media (min-width: 992px) {
 }
 
 @media (min-width: 1200px) {
