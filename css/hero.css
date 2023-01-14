@@ -60,22 +60,25 @@
 @media (min-width: 992px) {
   .carousel-text {
     bottom: 100px;
-    padding-left: 5%;
+    padding-left: 0%;
     width: 50%;
   }
 
   .carousel-control-prev {
     transform: translateX(-4rem);
+    overflow: hidden;
   }
 
   .carousel-control-next {
     transform: translateX(4rem);
+    overflow: hidden;
   }
 }
 
 @media (min-width: 1200px) {
   .carousel-text {
-    bottom: 100px;
+    bottom: 300px;
+    padding-left: 3%;
 
     width: 50%;
   }
@@ -83,7 +86,7 @@
 
 @media (min-width: 1400px) {
   .carousel-text {
-    padding-left: 10%;
+    padding-left: 5%;
   }
 }
 
