@@ -2,10 +2,6 @@ img {
   width: 4rem;
 }
 
-body {
-  background-color: #adb5bd;
-}
-
 nav {
   z-index: 99;
 }
