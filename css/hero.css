@@ -1,8 +1,9 @@
 .slider {
   position: absolute;
   width: 100%;
-  max-height: 2500px;
-  min-height: 500px !important;
+  height: 100vh;
+  overflow: hidden;
+
   top: 0;
   left: 0;
 }
@@ -33,6 +34,21 @@
   text-decoration: none;
 }
 
+.nav-item a:hover {
+  opacity: 50% !important;
+  color: white !important;
+}
+
+.nav-contact {
+  pointer-events: none;
+}
+
+.text-us button:hover {
+  color: black;
+  background-color: white;
+  transition: 300ms ease-in-out;
+}
+
 @media (min-width: 576px) {
   .carousel-text {
     bottom: 80px;
@@ -47,6 +63,14 @@
 @media (min-width: 768px) {
   .carousel-item1 img {
     content: url("/assets/images/slider-1.webp");
+  }
+
+  .carousel-item2 img {
+    content: url("/assets/images/slider-2.webp");
+  }
+
+  .carousel-item3 img {
+    content: url("/assets/images/slider-3.webp");
   }
 
   .carousel-text {
