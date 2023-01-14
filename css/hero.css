@@ -16,7 +16,7 @@
 }
 
 .carousel-text {
-  bottom: 50px;
+  bottom: 20px;
   color: white;
   position: absolute;
   z-index: 999;
@@ -24,7 +24,7 @@
 }
 
 .carousel-text {
-  width: 350px;
+  width: 80%;
 }
 
 .carousel-text h2:first-child {
@@ -41,8 +41,28 @@
   text-decoration: none;
 }
 
+@media (min-width: 576px) {
+  .carousel-text {
+    bottom: 100px;
+    margin-left: 2rem;
+  }
+
+  .carousel-text {
+    width: 80%;
+  }
+}
+
 @media (min-width: 768px) {
   .carousel-item img {
     content: url("/assets/images/slider-1.webp");
+  }
+
+  .carousel-text {
+    bottom: 60px;
+    margin-left: 2rem;
+  }
+
+  .carousel-text {
+    width: 80%;
   }
 }

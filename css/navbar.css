@@ -15,6 +15,11 @@ nav {
   margin-right: 1rem;
 }
 
+.navbar-collapse {
+  background-color: #00000080;
+  padding: 2rem;
+}
+
 #home {
   border-bottom: 2px solid white;
 }
@@ -36,6 +41,11 @@ nav {
 @media (min-width: 768px) {
   .text-us button {
     padding: 0.3rem 1.2rem;
+  }
+
+  .navbar-collapse {
+    background-color: transparent;
+    padding: 0;
   }
 }
 
