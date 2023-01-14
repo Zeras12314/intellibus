@@ -7,14 +7,6 @@
   left: 0;
 }
 
-.carousel-control-prev {
-  transform: translateX(-4rem);
-}
-
-.carousel-control-next {
-  transform: translateX(4rem);
-}
-
 .carousel-text {
   bottom: 20px;
   color: white;
@@ -24,7 +16,7 @@
 }
 
 .carousel-text {
-  width: 80%;
+  width: 90%;
 }
 
 .carousel-text h2:first-child {
@@ -60,9 +52,22 @@
   .carousel-text {
     bottom: 60px;
     margin-left: 2rem;
+    width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel-text {
+    bottom: 100px;
+    margin-left: 2rem;
+    width: 40%;
   }
 
-  .carousel-text {
-    width: 80%;
+  .carousel-control-prev {
+    transform: translateX(-4rem);
+  }
+
+  .carousel-control-next {
+    transform: translateX(4rem);
   }
 }
