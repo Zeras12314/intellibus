@@ -1,0 +1,55 @@
+.team-profile img {
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.controls i {
+  padding: 0.8rem 4.5rem;
+  background-color: #ededed;
+  cursor: pointer;
+}
+
+.controls {
+  text-align: center;
+}
+
+.team-profile-text {
+  padding: 0 2rem;
+}
+
+.role {
+  color: #a5a5a5;
+}
+
+.team-profile {
+  display: none;
+}
+
+.profile-active {
+  display: block !important;
+}
+
+@media (min-width: 768px) {
+  .controls {
+    display: none;
+  }
+  .team-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .team-profile {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .team-profile img {
+    padding: 0;
+    width: 200px;
+  }
+
+  .team-profile-text {
+    padding: 0;
+  }
+}

@@ -1,0 +1,37 @@
+.see-jobs .content {
+  background-color: #c6e4ff;
+  padding: 2rem;
+}
+
+.cta-jobs {
+  border: 2px solid #0a5495;
+  color: #0a5495;
+  background-color: #eaf5ff;
+  padding: 6px 22px;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+.content img {
+  mix-blend-mode: multiply;
+  width: 7rem;
+  position: absolute;
+}
+
+@media (min-width: 768px) {
+  .content h3 {
+    padding-top: 3.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .see-jobs {
+    max-width: 900px;
+  }
+
+  .content img {
+    mix-blend-mode: multiply;
+    width: 7rem;
+    position: relative;
+  }
+}
