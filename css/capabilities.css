@@ -61,6 +61,10 @@
 }
 
 @media (min-width: 768px) {
+  /* .tab-img {
+    height: 282px;
+  } */
+
   .capabilities {
     padding-left: 8rem;
     padding-right: 8rem;

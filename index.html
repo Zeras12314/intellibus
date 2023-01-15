@@ -236,9 +236,31 @@
         </h3>
         <h3 class="fw-bold">Get visibiity in your system</h3>
         <img
-          class="float-md-end"
+          class="float-md-end tab-img"
           src="/assets/images/capabilities-laptop.png"
-          alt="laptop"
+          alt="monitor"
+          id="moniImg"
+        />
+
+        <img
+          class="float-md-end tab-img d-none"
+          src="/assets/images/stabImg.jpg"
+          alt="stability"
+          id="stabImg"
+        />
+
+        <img
+          class="float-md-end tab-img d-none"
+          src="/assets/images/archiImg.jpg"
+          alt="architecture"
+          id="archiImg"
+        />
+
+        <img
+          class="float-md-end tab-img d-none"
+          src="/assets/images/uiImg.jpeg"
+          alt="ui"
+          id="uiImg"
         />
 
         <div class="dropdown mt-3">
@@ -247,30 +269,62 @@
             type=""
             data-bs-toggle="dropdown"
             aria-expanded="false"
+            id="btnDropdown"
           >
             Monitor
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Stability</a></li>
-            <li><a class="dropdown-item" href="#">Architecture</a></li>
-            <li><a class="dropdown-item" href="#">UI</a></li>
+            <li><a class="dropdown-item" onclick="monitor()">Monitor</a></li>
+            <li>
+              <a class="dropdown-item" onclick="stability()">Stability</a>
+            </li>
+            <li>
+              <a class="dropdown-item" onclick="architecture()">Architecture</a>
+            </li>
+
+            <li><a class="dropdown-item" onclick="ui()">UI</a></li>
           </ul>
         </div>
         <div class="img-titles fw-bold mt-3">
-          <p class="monitor active">Monitor</p>
-          <p class="stability">Stability</p>
-          <p class="architecture">Architecture</p>
-          <p class="ui">UI</p>
+          <p class="monitor active" id="monitor" onclick="monitor()">Monitor</p>
+          <p class="stability" id="stability" onclick="stability()">
+            Stability
+          </p>
+          <p class="architecture" id="architecture" onclick="architecture()">
+            Architecture
+          </p>
+          <p class="ui" id="ui" onclick="ui()">UI</p>
         </div>
 
-        <div class="img-text img-text-active mt-3">
+        <div class="img-text mt-3 mt-md-0" id="monitext">
           <h5>Helping app owners detect problems under 10 minutes</h5>
           <p>
             If you own mission critical apps and are looking for predictability,
             we can help.
           </p>
         </div>
-        <button class="cta-started">GET STARTED</button>
+
+        <div class="img-text d-none mt-3 mt-md-0" id="stabtext">
+          <h5>Stability</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+            praesentium?
+          </p>
+        </div>
+
+        <div class="img-text d-none my-3 mt-md-0" id="archiText">
+          <h5>Architect</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum
+            odio repudiandae quasi ratione! Quos, rem?
+          </p>
+        </div>
+
+        <div class="img-text d-none mt-3 mt-md-0" id="uiText">
+          <h5>UI</h5>
+          <p>Lorem ipsum dolor adipisicing elit. Deleniti, praesentium?</p>
+        </div>
+        <button class="cta-started mb-3">GET STARTED</button>
       </div>
 
       <!-- team -->
