@@ -8,7 +8,15 @@
   left: 0;
   min-width: 1300px;
 }
-
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  height: 680px;
+  position: relative;
+  top: 0;
+  position: absolute;
+}
 .carousel-text {
   left: 0;
   bottom: 15rem;
@@ -74,11 +82,11 @@ h2 {
     height: 100vh;
   }
   .carousel-text {
-    padding-left: 12%;
+    padding-left: 5%;
   }
 
   .carousel-text {
-    width: 80%;
+    width: 500px;
   }
 
   .carousel-item {
@@ -87,10 +95,13 @@ h2 {
 }
 
 @media (min-width: 768px) {
+  /* .slider {
+    min-width: 900px;
+  } */
   .carousel-text {
-    bottom: 30px;
-    padding-left: 12%;
-    width: 70%;
+    bottom: 170px;
+
+    width: 50%;
   }
 
   h2 {
@@ -100,7 +111,7 @@ h2 {
 
 @media (min-width: 992px) {
   .carousel-text {
-    bottom: 100px;
+    bottom: 250px;
     padding-left: 0%;
     width: 50%;
   }
@@ -122,7 +133,7 @@ h2 {
 
 @media (min-width: 1200px) {
   .carousel-text {
-    bottom: 250px;
+    bottom: 300px;
     padding-left: 4%;
 
     width: 50%;

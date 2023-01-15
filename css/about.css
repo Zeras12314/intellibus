@@ -1,5 +1,5 @@
 .about {
-  padding-top: 590px;
+  padding-top: 630px;
   color: #212529;
   position: relative !important;
 }
@@ -24,41 +24,33 @@ h4 span:last-child {
 .about-bg-1 {
   width: 270px;
   position: absolute;
-  bottom: 10rem;
+  bottom: 2rem;
   right: 5rem;
 }
 
 @media (min-width: 576px) {
   .about {
-    padding-top: 350px;
+    padding-top: 600px;
   }
 
   .about-bg-1 {
-    bottom: 7rem;
+    bottom: 4rem;
   }
 }
 
 @media (min-width: 768px) {
   .about {
-    padding-top: 430px;
+    padding-top: 600px;
   }
-
   .about h4 {
     width: 60%;
   }
 }
 
 @media (min-width: 888px) {
-  .about {
-    padding-top: 480px;
-  }
 }
 
 @media (min-width: 992px) {
-  .about {
-    padding-top: 570px;
-  }
-
   .about p span {
     display: block;
   }
@@ -76,10 +68,6 @@ h4 span:last-child {
 }
 
 @media (min-width: 1200px) {
-  .about {
-    padding-top: 680px;
-  }
-
   .about-bg-1 {
     right: 45rem;
   }

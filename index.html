@@ -38,7 +38,7 @@
   <body>
     <section class="">
       <div class="container">
-        <nav class="navbar navbar-expand-lg mt-4">
+        <nav class="navbar navbar-expand-lg position-relative">
           <div class="container-fluid">
             <a href="#">
               <img
@@ -100,94 +100,105 @@
       </div>
 
       <!-- Slider Section -->
+      <div class="slider-container">
+        <div class="slider">
+          <div
+            id="carouselExampleInterval"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div
+                class="carousel-item carousel-item1 active"
+                data-bs-interval="3000"
+              >
+                <video width="100%" height="100%" autoplay muted>
+                  <source src="/assets/videos/video3.mp4" type="video/mp4" />
 
-      <div class="slider">
-        <div
-          id="carouselExampleInterval"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div
-              class="carousel-item carousel-item1 active"
-              data-bs-interval="3000"
+                  Your browser does not support the video tag.
+                </video>
+                <div class="carousel-text container ms-lg-5">
+                  <h2>PLATFORM ENGINEERING</h2>
+                  <h2>+BOARD ADVISORY FIRM</h2>
+                  <p>
+                    A team of Successful Entrepreneurs and Founders that help
+                    you achieve Business Outcomes with Accuracy & Precision.
+                    Passion for Great Engineering is in our DNA.
+                  </p>
+                  <a href="#" class="cta-work"
+                    >SEE OUR WORK
+                    <i class="fa-solid fa-arrow-right-long ms-1"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="carousel-item carousel-item2" data-bs-interval="3000">
+                <video width="100%" height="100%" autoplay muted>
+                  <source src="/assets/videos/video2.mp4" type="video/mp4" />
+
+                  Your browser does not support the video tag.
+                </video>
+                <div class="carousel-text container ms-lg-5">
+                  <h2>aliquid velit odit</h2>
+                  <h2>repellendus eveniet</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Porro aliquid velit odit minus quasi repellendus eveniet
+                    inventore soluta a dolorum earum est consequatur, fugit
+                    consequuntur!
+                  </p>
+                  <a href="#" class="cta-work"
+                    >SEE OUR WORK
+                    <i class="fa-solid fa-arrow-right-long ms-1"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="carousel-item carousel-item3" data-bs-interval="3000">
+                <video width="100%" height="100%" autoplay muted>
+                  <source src="/assets/videos/video.mp4" type="video/mp4" />
+
+                  Your browser does not support the video tag.
+                </video>
+                <div class="carousel-text container ms-lg-5">
+                  <h2>consectetur adipisicing</h2>
+                  <h2>dolore ducimus</h2>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Sequi corporis possimus cumque assumenda, dolore ducimus
+                    perspiciatis cupiditate accusantium! Aut dignissimos quos
+                    quis praesentium magni obcaecati?
+                  </p>
+                  <a href="#" class="cta-work"
+                    >SEE OUR WORK
+                    <i class="fa-solid fa-arrow-right-long ms-1"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev d-none d-lg-block"
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide="prev"
             >
-              <video width="100%" height="100%" autoplay muted>
-                <source src="/assets/videos/video3.mp4" type="video/mp4" />
-
-                Your browser does not support the video tag.
-              </video>
-              <div class="carousel-text container ms-lg-5">
-                <h2>PLATFORM ENGINEERING</h2>
-                <h2>+BOARD ADVISORY FIRM</h2>
-                <p>
-                  A team of Successful Entrepreneurs and Founders that help you
-                  achieve Business Outcomes with Accuracy & Precision. Passion
-                  for Great Engineering is in our DNA.
-                </p>
-                <a href="#" class="cta-work"
-                  >SEE OUR WORK <i class="fa-solid fa-arrow-right-long ms-1"></i
-                ></a>
-              </div>
-            </div>
-            <div class="carousel-item carousel-item2" data-bs-interval="3000">
-              <video width="100%" height="100%" autoplay muted>
-                <source src="/assets/videos/video2.mp4" type="video/mp4" />
-
-                Your browser does not support the video tag.
-              </video>
-              <div class="carousel-text container ms-lg-5">
-                <h2>aliquid velit odit</h2>
-                <h2>repellendus eveniet</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-                  aliquid velit odit minus quasi repellendus eveniet inventore
-                  soluta a dolorum earum est consequatur, fugit consequuntur!
-                </p>
-                <a href="#" class="cta-work"
-                  >SEE OUR WORK <i class="fa-solid fa-arrow-right-long ms-1"></i
-                ></a>
-              </div>
-            </div>
-            <div class="carousel-item carousel-item3" data-bs-interval="3000">
-              <video width="100%" height="100%" autoplay muted>
-                <source src="/assets/videos/video.mp4" type="video/mp4" />
-
-                Your browser does not support the video tag.
-              </video>
-              <div class="carousel-text container ms-lg-5">
-                <h2>consectetur adipisicing</h2>
-                <h2>dolore ducimus</h2>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Sequi corporis possimus cumque assumenda, dolore ducimus
-                  perspiciatis cupiditate accusantium! Aut dignissimos quos quis
-                  praesentium magni obcaecati?
-                </p>
-                <a href="#" class="cta-work"
-                  >SEE OUR WORK <i class="fa-solid fa-arrow-right-long ms-1"></i
-                ></a>
-              </div>
-            </div>
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next d-none d-lg-block"
+              type="button"
+              data-bs-target="#carouselExampleInterval"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <button
-            class="carousel-control-prev d-none d-md-block"
-            type="button"
-            data-bs-target="#carouselExampleInterval"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next d-none d-md-block"
-            type="button"
-            data-bs-target="#carouselExampleInterval"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
       </div>
 
@@ -274,59 +285,46 @@
         </div>
 
         <div class="team-slider">
-          <div class="team-profile">
-            <img src="/assets/images/slider/image-1.jpg" alt="girl image" />
-            <div class="team-profile-text pt-4">
-              <h3 class="name fw-bold">JANE DOE</h3>
-              <p class="role fw-bold">UI PRACTICE LEAD</p>
-              <p class="desc">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Commodi delectus incidunt ab maiores atque voluptate est ducimus
-                animi sequi nam.
-              </p>
-            </div>
-          </div>
-
-          <div class="team-profile">
-            <img src="/assets/images/slider/image-1.jpg" alt="girl image" />
-            <div class="team-profile-text pt-4">
-              <h3 class="name fw-bold">JANE DOE</h3>
-              <p class="role fw-bold">UI PRACTICE LEAD</p>
-              <p class="desc">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Commodi delectus incidunt ab maiores atque voluptate est ducimus
-                animi sequi nam.
-              </p>
-            </div>
-          </div>
-
-          <div class="team-profile">
-            <img src="/assets/images/slider/image-1.jpg" alt="girl image" />
-            <div class="team-profile-text pt-4">
-              <h3 class="name fw-bold">JANE DOE</h3>
-              <p class="role fw-bold">UI PRACTICE LEAD</p>
-              <p class="desc">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Commodi delectus incidunt ab maiores atque voluptate est ducimus
-                animi sequi nam.
-              </p>
-            </div>
-          </div>
-
-          <div class="team-profile">
-            <img src="/assets/images/slider/image-1.jpg" alt="girl image" />
-            <div class="team-profile-text pt-4">
-              <h3 class="name fw-bold">JANE DOE</h3>
-              <p class="role fw-bold">UI PRACTICE LEAD</p>
-              <p class="desc">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Commodi delectus incidunt ab maiores atque voluptate est ducimus
-                animi sequi nam.
-              </p>
-            </div>
-          </div>
-
           <div class="team-profile profile-active">
+            <img src="/assets/images/slider/image-1.jpg" alt="girl image" />
+            <div class="team-profile-text pt-4">
+              <h3 class="name fw-bold">JANE DOE</h3>
+              <p class="role fw-bold">UI PRACTICE LEAD</p>
+              <p class="desc">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Commodi delectus incidunt ab maiores atque voluptate est ducimus
+                animi sequi nam.
+              </p>
+            </div>
+          </div>
+
+          <div class="team-profile">
+            <img src="/assets/images/slider/image-1.jpg" alt="girl image" />
+            <div class="team-profile-text pt-4">
+              <h3 class="name fw-bold">JANE DOE</h3>
+              <p class="role fw-bold">UI PRACTICE LEAD</p>
+              <p class="desc">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Commodi delectus incidunt ab maiores atque voluptate est ducimus
+                animi sequi nam.
+              </p>
+            </div>
+          </div>
+
+          <div class="team-profile">
+            <img src="/assets/images/slider/image-1.jpg" alt="girl image" />
+            <div class="team-profile-text pt-4">
+              <h3 class="name fw-bold">JANE DOE</h3>
+              <p class="role fw-bold">UI PRACTICE LEAD</p>
+              <p class="desc">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Commodi delectus incidunt ab maiores atque voluptate est ducimus
+                animi sequi nam.
+              </p>
+            </div>
+          </div>
+
+          <div class="team-profile">
             <img src="/assets/images/slider/image-1.jpg" alt="girl image" />
             <div class="team-profile-text pt-4">
               <h3 class="name fw-bold">JANE DOE</h3>
