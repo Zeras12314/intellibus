@@ -1,0 +1,79 @@
+.contact-us {
+  background-image: url(/assets/images/contact-bg.jpg);
+
+  background-size: cover;
+  padding: 2rem 0;
+}
+
+.contact-form {
+  margin: 0 1rem;
+  padding: 1rem;
+  border: 1px solid #ced4da;
+  position: relative;
+  background-color: white;
+}
+
+input {
+  border-color: #0a549580;
+  padding: 4px;
+  width: 100%;
+}
+
+input {
+  text-indent: 12px;
+}
+
+.cta-contact {
+  width: 100%;
+  padding: 0.7rem 0;
+  background-color: #0a5495;
+  color: white;
+  border: 0;
+  transition: 200ms ease-in;
+}
+
+.cta-contact:hover {
+  background-color: #0a549595;
+}
+
+.contact-form h3 {
+  color: #0a5495;
+}
+
+.c-shape {
+  width: 300px;
+  position: absolute;
+  right: 4rem;
+}
+.c-shape-2 {
+  width: 60px;
+  position: absolute;
+  right: 8rem;
+  bottom: 9rem;
+}
+
+@media (min-width: 768px) {
+  .contact-us {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .contact-form {
+    margin-right: 0;
+    width: 700px;
+    padding-left: 1rem;
+  }
+
+  input {
+    width: 350px !important;
+  }
+  .cta-contact {
+    width: 200px;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact-form {
+    width: 800px;
+  }
+}

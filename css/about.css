@@ -1,7 +1,9 @@
 .about {
   padding-top: 630px;
+  padding-bottom: 2rem;
   color: #212529;
   position: relative !important;
+  border-bottom: 1px solid #ced4da;
 }
 
 .about h4 {
@@ -41,6 +43,8 @@ h4 span:last-child {
 @media (min-width: 768px) {
   .about {
     padding-top: 600px;
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
   .about h4 {
     width: 60%;
@@ -51,6 +55,9 @@ h4 span:last-child {
 }
 
 @media (min-width: 992px) {
+  .about {
+    padding-top: 680px;
+  }
   .about p span {
     display: block;
   }

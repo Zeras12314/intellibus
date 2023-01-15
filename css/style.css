@@ -5,6 +5,7 @@
 @import "/css/capabilities.css";
 @import "/css/team.css";
 @import "/css/seejobs.css";
+@import "/css/contact-us.css";
 
 *,
 *::before,
@@ -22,4 +23,16 @@ body {
   position: relative;
   color: #212529;
   background-color: white;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  border-top: 2px solid #0a5495;
+}
+
+footer a {
+  text-decoration: none;
+  color: #212529;
 }

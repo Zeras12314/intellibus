@@ -110,6 +110,9 @@ h2 {
 }
 
 @media (min-width: 992px) {
+  .slider-container {
+    height: 100vh;
+  }
   .carousel-text {
     bottom: 250px;
     padding-left: 0%;
