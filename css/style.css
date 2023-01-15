@@ -2,6 +2,7 @@
 @import "/css/font.css";
 @import "/css/hero.css";
 @import "/css/about.css";
+@import "/css/capabilities.css";
 
 *,
 *::before,
@@ -16,6 +17,7 @@ body {
   height: 100vh;
   width: 100%;
   overflow-x: hidden;
-  color: white;
+
+  color: #212529;
   background-color: white;
 }
