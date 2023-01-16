@@ -6,7 +6,8 @@
 .mySwiper {
   position: relative;
   overflow: hidden;
-  margin-left: 40px;
+  margin-left: 1.2rem !important;
+  padding-bottom: 4rem !important;
 }
 /* .wrapper {
   max-width: 1200px;
@@ -14,8 +15,6 @@
 
 .team .team-profile img {
   width: 100%;
-
-  padding: 0 2rem;
 }
 
 .controls i {
@@ -28,9 +27,9 @@
   text-align: center;
 }
 
-.team-profile-text {
+/* .team-profile-text {
   padding: 0 2rem;
-}
+} */
 
 .role {
   color: #a5a5a5;
@@ -41,6 +40,12 @@
 }
 
 @media (min-width: 768px) {
+  .mySwiper {
+    padding-left: 20px !important;
+    padding-right: 30px !important;
+    margin-left: 0 !important;
+  }
+
   .controls {
     display: none;
   }
