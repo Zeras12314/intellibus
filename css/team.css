@@ -1,5 +1,20 @@
-.team-profile img {
+.team-profile {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.mySwiper {
+  position: relative;
+  overflow: hidden;
+  margin-left: 40px;
+}
+/* .wrapper {
+  max-width: 1200px;
+} */
+
+.team .team-profile img {
   width: 100%;
+
   padding: 0 2rem;
 }
 
@@ -21,10 +36,6 @@
   color: #a5a5a5;
 }
 
-.team-profile {
-  display: none;
-}
-
 .profile-active {
   display: block !important;
 }
@@ -33,11 +44,7 @@
   .controls {
     display: none;
   }
-  .team-slider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+
   .team-profile {
     margin-top: 2rem;
     display: flex;
