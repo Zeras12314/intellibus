@@ -5,9 +5,10 @@
   position: relative;
   background-color: #fbfbfb;
   margin: 0 auto;
+  z-index: 2;
 }
 
-.capabilities img {
+.tab-img {
   width: 100%;
 }
 
@@ -65,6 +66,30 @@
     height: 282px;
   } */
 
+  .cap-shape-1 {
+    left: 0;
+    width: 130px;
+  }
+
+  .cap-shape-2 {
+    left: 8rem;
+    bottom: 10rem;
+  }
+
+  .cap-shape-3 {
+    right: 5rem;
+
+    top: -10rem;
+    width: 50px;
+  }
+
+  .cap-shape-shaded {
+    right: 8rem;
+
+    bottom: 21rem;
+    width: 80px;
+  }
+
   .capabilities {
     padding-left: 8rem;
     padding-right: 8rem;
@@ -76,7 +101,7 @@
   .cta-started {
     margin-top: 1rem;
   }
-  .capabilities img {
+  .tab-img {
     position: absolute;
     right: 0;
     width: 300px;
@@ -110,7 +135,7 @@
 }
 
 @media (min-width: 992px) {
-  .capabilities img {
+  .tab-img {
     width: 350px;
   }
 }

@@ -242,108 +242,149 @@
       </div>
 
       <!-- capabilities -->
-      <div class="container capabilities ps-3 ps-lg-5 pb-5 mb-5">
-        <h3 class="text-center my-4 cap-heading">
-          Our <strong>Capabilities</strong>
-        </h3>
-        <h3 class="fw-bold">Get visibiity in your system</h3>
-        <img
-          class="float-md-end tab-img"
-          src="/assets/images/capabilities-laptop.png"
-          alt="monitor"
-          id="moniImg"
-        />
-
-        <img
-          class="float-md-end tab-img d-none"
-          src="/assets/images/stabImg.jpg"
-          alt="stability"
-          id="stabImg"
-        />
-
-        <img
-          class="float-md-end tab-img d-none"
-          src="/assets/images/archiImg.jpg"
-          alt="architecture"
-          id="archiImg"
-        />
-
-        <img
-          class="float-md-end tab-img d-none"
-          src="/assets/images/uiImg.jpeg"
-          alt="ui"
-          id="uiImg"
-        />
-
-        <div class="dropdown mt-3">
-          <button
-            class="btn dropdown-toggle capabilities-dropdown fw-bold"
-            type=""
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-            id="btnDropdown"
-          >
-            Monitor
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" onclick="monitor()">Monitor</a></li>
-            <li>
-              <a class="dropdown-item" onclick="stability()">Stability</a>
-            </li>
-            <li>
-              <a class="dropdown-item" onclick="architecture()">Architecture</a>
-            </li>
-
-            <li><a class="dropdown-item" onclick="ui()">UI</a></li>
-          </ul>
-        </div>
-        <div class="img-titles fw-bold mt-3">
-          <p class="monitor active" id="monitor" onclick="monitor()">Monitor</p>
-          <p class="stability" id="stability" onclick="stability()">
-            Stability
-          </p>
-          <p class="architecture" id="architecture" onclick="architecture()">
-            Architecture
-          </p>
-          <p class="ui" id="ui" onclick="ui()">UI</p>
+      <div class="container-fluid p-relative px-0">
+        <div class="shapes position-relative">
+          <img
+            src="/assets/images/capabilities-shape-1.png"
+            class="d-none d-lg-block position-absolute cap-shape-1"
+            alt="triangle big"
+          />
         </div>
 
-        <div class="img-text mt-3 mt-md-0" id="monitext">
-          <h5>Helping app owners detect problems under 10 minutes</h5>
-          <p>
-            If you own mission critical apps and are looking for predictability,
-            we can help.
-          </p>
+        <div class="container capabilities ps-3 ps-lg-5 pb-5 mb-5">
+          <h3 class="text-center my-4 cap-heading">
+            Our <strong>Capabilities</strong>
+          </h3>
+          <h3 class="fw-bold">Get visibiity in your system</h3>
+
+          <img
+            class="float-md-end tab-img"
+            src="/assets/images/capabilities-laptop.png"
+            alt="monitor"
+            id="moniImg"
+          />
+
+          <img
+            class="float-md-end tab-img d-none"
+            src="/assets/images/stabImg.jpg"
+            alt="stability"
+            id="stabImg"
+          />
+
+          <img
+            class="float-md-end tab-img d-none"
+            src="/assets/images/archiImg.jpg"
+            alt="architecture"
+            id="archiImg"
+          />
+
+          <img
+            class="float-md-end tab-img d-none"
+            src="/assets/images/uiImg.jpeg"
+            alt="ui"
+            id="uiImg"
+          />
+
+          <div class="dropdown mt-3">
+            <button
+              class="btn dropdown-toggle capabilities-dropdown fw-bold"
+              type=""
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              id="btnDropdown"
+            >
+              Monitor
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" onclick="monitor()">Monitor</a></li>
+              <li>
+                <a class="dropdown-item" onclick="stability()">Stability</a>
+              </li>
+              <li>
+                <a class="dropdown-item" onclick="architecture()"
+                  >Architecture</a
+                >
+              </li>
+
+              <li><a class="dropdown-item" onclick="ui()">UI</a></li>
+            </ul>
+          </div>
+          <div class="img-titles fw-bold mt-3">
+            <p class="monitor active" id="monitor" onclick="monitor()">
+              Monitor
+            </p>
+            <p class="stability" id="stability" onclick="stability()">
+              Stability
+            </p>
+            <p class="architecture" id="architecture" onclick="architecture()">
+              Architecture
+            </p>
+            <p class="ui" id="ui" onclick="ui()">UI</p>
+          </div>
+
+          <div class="img-text mt-3 mt-md-0" id="monitext">
+            <h5>Helping app owners detect problems under 10 minutes</h5>
+            <p>
+              If you own mission critical apps and are looking for
+              predictability, we can help.
+            </p>
+          </div>
+
+          <div class="img-text d-none mt-3 mt-md-0" id="stabtext">
+            <h5>Stability</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+              praesentium?
+            </p>
+          </div>
+
+          <div class="img-text d-none my-3 mt-md-0" id="archiText">
+            <h5>Architect</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum
+              odio repudiandae quasi ratione! Quos, rem?
+            </p>
+          </div>
+
+          <div class="img-text d-none mt-3 mt-md-0" id="uiText">
+            <h5>UI</h5>
+            <p>Lorem ipsum dolor adipisicing elit. Deleniti, praesentium?</p>
+          </div>
+          <button class="cta-started mb-3">GET STARTED</button>
         </div>
 
-        <div class="img-text d-none mt-3 mt-md-0" id="stabtext">
-          <h5>Stability</h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
-            praesentium?
-          </p>
-        </div>
+        <!-- shapes-bg -->
+        <div class="position-relative w-100">
+          <img
+            src="/assets/images/capabilities-shape-2.png"
+            class="d-none d-lg-block position-absolute cap-shape-2"
+            alt="triangle medium"
+          />
 
-        <div class="img-text d-none my-3 mt-md-0" id="archiText">
-          <h5>Architect</h5>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum
-            odio repudiandae quasi ratione! Quos, rem?
-          </p>
-        </div>
+          <img
+            src="/assets/images/capabilities-shape-3.png"
+            class="d-none d-lg-block position-absolute cap-shape-3"
+            alt="triangle small"
+          />
 
-        <div class="img-text d-none mt-3 mt-md-0" id="uiText">
-          <h5>UI</h5>
-          <p>Lorem ipsum dolor adipisicing elit. Deleniti, praesentium?</p>
+          <img
+            src="/assets/images/capabilities-shape-shaded.png"
+            class="d-none d-lg-block position-absolute cap-shape-shaded"
+            alt="triangle shaded"
+          />
         </div>
-        <button class="cta-started mb-3">GET STARTED</button>
       </div>
 
       <!-- team -->
-      <div class="team container-fluid mb-5">
-        <h3 class="text-center mb-4">
+      <div class="team container-fluid mb-5 position-relative">
+        <img
+          src="/assets/images/team-shape-1.png"
+          alt="triangle"
+          class="d-none d-xl-block position-absolute team-shape-1"
+        />
+        <h3 class="text-center mb-5 pb-3">
           We're a team of passionate
-          <span class="fw-bold">software engineers</span>
+          <span class="fw-bold d-block">software engineers</span>
         </h3>
 
         <div class="controls mb-2">
@@ -463,14 +504,40 @@
             </div>
           </div>
           .
-          <div class="swiper-button-next d-none d-md-block"></div>
-          <div class="swiper-button-prev d-none d-md-block"></div>
-          <div class="swiper-pagination"></div>
+          <!-- <div class="swiper-button-next d-none d-md-block"></div>
+          <div class="swiper-button-prev d-none d-md-block"></div> -->
+          <!-- <div class="swiper-pagination"></div> -->
+
+          <div
+            class="team-slider-controls d-md-flex justify-content-between d-none"
+          >
+            <i class="fa-solid fa-chevron-left team-slider-prev"></i>
+            <i class="fa-solid fa-chevron-right team-slider-next"></i>
+          </div>
         </div>
       </div>
 
       <!-- see jobs -->
-      <div class="container see-jobs text-center mb-5 pb-lg-5">
+      <div
+        class="container see-jobs text-center mb-5 pb-lg-5 position-relative"
+      >
+        <img
+          src="/assets/images/seejobs-shape-1.png"
+          alt="triangle border"
+          class="d-none-d-lg-block position-absolute team-shape-1"
+        />
+
+        <img
+          src="/assets/images/seejobs-shape-2.png"
+          alt="triangle border"
+          class="d-none-d-lg-block position-absolute team-shape-2"
+        />
+
+        <img
+          src="/assets/images/seejobs-shape-shaded.png"
+          alt="triangle border"
+          class="d-none-d-lg-block position-absolute team-shape-shaded"
+        />
         <div class="content mx-2 position-relative">
           <h3>
             If you passionate about great engineering, and excited to join our
@@ -525,9 +592,9 @@
       </div>
 
       <!-- //podcast player -->
-      <div class="container py-5 my-5 podcast">
+      <div class="container py-lg-5 my-lg-5 py-4 podcast">
         <iframe
-          title="The quandok’s Podcast"
+          title="Intellibus Podcast"
           allowtransparency="true"
           height="315"
           width="100%"
@@ -568,8 +635,8 @@
         },
 
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: ".team-slider-next",
+          prevEl: ".team-slider-prev",
         },
 
         slidesPerView: "auto",

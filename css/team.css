@@ -39,6 +39,37 @@
   display: block !important;
 }
 
+.team-shape-1 {
+  left: 27rem;
+  top: 4rem;
+  width: 50px;
+}
+
+.team-slider-controls i {
+  background-color: #00000080;
+  border-radius: 50%;
+
+  color: white;
+  padding: 1.5rem;
+  font-size: 20px;
+}
+
+.team-slider-prev {
+  position: absolute;
+  top: 30%;
+  z-index: 999;
+  left: 0;
+  cursor: pointer;
+}
+
+.team-slider-next {
+  position: absolute;
+  top: 30%;
+  z-index: 999;
+  right: 0;
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
   .mySwiper {
     padding-left: 20px !important;
