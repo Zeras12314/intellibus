@@ -14,7 +14,9 @@
 }
 
 input {
-  border-color: #0a549580;
+  border: 2px solid #0a549590;
+  border-radius: 3px;
+
   padding: 4px;
   width: 100%;
 }
@@ -30,6 +32,7 @@ input {
   color: white;
   border: 0;
   transition: 200ms ease-in;
+  border-radius: 3px;
 }
 
 .cta-contact:hover {
