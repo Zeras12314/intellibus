@@ -72,6 +72,12 @@ h4 span:last-child {
     right: 10rem;
     bottom: 2rem;
   }
+
+  .about-bg-3 {
+    position: absolute;
+    left: 0;
+    bottom: 4rem;
+  }
 }
 
 @media (min-width: 1200px) {
