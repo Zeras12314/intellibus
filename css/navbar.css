@@ -36,6 +36,12 @@ nav {
   letter-spacing: 1.5px;
 }
 
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
 @media (min-width: 576px) {
 }
 

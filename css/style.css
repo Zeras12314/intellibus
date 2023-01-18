@@ -38,5 +38,12 @@ footer a {
 }
 
 .podcast {
-  max-width: 1100px;
+  max-width: 880px;
+  margin-top: 0.8rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.podcast h3 {
+  color: #0a5495;
 }

@@ -16,11 +16,35 @@
   width: 100%;
 }
 
-.controls i {
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.prev-wrapper,
+.next-wrapper {
+  background: #ededed;
+  padding: 0.5rem 3.7rem;
+  cursor: pointer;
+}
+
+.prev-wrapper img,
+.next-wrapper img {
+  width: 50px;
+}
+/* .controls i {
   padding: 0.8rem 4.5rem;
   background-color: #ededed;
   cursor: pointer;
 }
+
+
+.controls img {
+  padding: 0.8rem 4.5rem;
+  background-color: #ededed;
+  cursor: pointer;
+} */
 
 .controls {
   text-align: center;

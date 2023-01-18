@@ -117,7 +117,7 @@
             <div class="carousel-inner">
               <div
                 class="carousel-item carousel-item1 active"
-                data-bs-interval="3000"
+                data-bs-interval="5000"
               >
                 <video width="100%" height="100%" autoplay muted loop>
                   <source src="/assets/videos/video3.mp4" type="video/mp4" />
@@ -138,7 +138,7 @@
                   ></a>
                 </div>
               </div>
-              <div class="carousel-item carousel-item2" data-bs-interval="3000">
+              <div class="carousel-item carousel-item2" data-bs-interval="5000">
                 <video width="100%" height="100%" autoplay muted loop>
                   <source src="/assets/videos/video2.mp4" type="video/mp4" />
 
@@ -159,7 +159,7 @@
                   ></a>
                 </div>
               </div>
-              <div class="carousel-item carousel-item3" data-bs-interval="3000">
+              <div class="carousel-item carousel-item3" data-bs-interval="5000">
                 <video width="100%" height="100%" autoplay muted loop>
                   <source src="/assets/videos/video.mp4" type="video/mp4" />
 
@@ -243,114 +243,142 @@
 
       <!-- capabilities -->
       <div class="container-fluid p-relative px-0">
-        <div class="shapes position-relative">
-          <img
-            src="/assets/images/capabilities-shape-1.png"
-            class="d-none d-lg-block position-absolute cap-shape-1"
-            alt="triangle big"
-          />
-        </div>
-
-        <div class="container capabilities ps-3 ps-lg-5 pb-5 mb-5">
-          <h3 class="text-center my-4 cap-heading">
-            Our <strong>Capabilities</strong>
-          </h3>
-          <h3 class="fw-bold">Get visibiity in your system</h3>
-
-          <img
-            class="float-md-end tab-img"
-            src="/assets/images/capabilities-laptop.png"
-            alt="monitor"
-            id="moniImg"
-          />
-
-          <img
-            class="float-md-end tab-img d-none"
-            src="/assets/images/stabImg.jpg"
-            alt="stability"
-            id="stabImg"
-          />
-
-          <img
-            class="float-md-end tab-img d-none"
-            src="/assets/images/archiImg.jpg"
-            alt="architecture"
-            id="archiImg"
-          />
-
-          <img
-            class="float-md-end tab-img d-none"
-            src="/assets/images/uiImg.jpeg"
-            alt="ui"
-            id="uiImg"
-          />
-
-          <div class="dropdown mt-3">
-            <button
-              class="btn dropdown-toggle capabilities-dropdown fw-bold"
-              type=""
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-              id="btnDropdown"
-            >
-              Monitor
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" onclick="monitor()">Monitor</a></li>
-              <li>
-                <a class="dropdown-item" onclick="stability()">Stability</a>
-              </li>
-              <li>
-                <a class="dropdown-item" onclick="architecture()"
-                  >Architecture</a
-                >
-              </li>
-
-              <li><a class="dropdown-item" onclick="ui()">UI</a></li>
-            </ul>
-          </div>
-          <div class="img-titles fw-bold mt-3">
-            <p class="monitor active" id="monitor" onclick="monitor()">
-              Monitor
-            </p>
-            <p class="stability" id="stability" onclick="stability()">
-              Stability
-            </p>
-            <p class="architecture" id="architecture" onclick="architecture()">
-              Architecture
-            </p>
-            <p class="ui" id="ui" onclick="ui()">UI</p>
+        <div class="cap-wrapper">
+          <div class="shapes position-relative">
+            <img
+              src="/assets/images/capabilities-shape-1.png"
+              class="d-none d-lg-block position-absolute cap-shape-1"
+              alt="triangle big"
+            />
           </div>
 
-          <div class="img-text mt-3 mt-md-0" id="monitext">
-            <h5>Helping app owners detect problems under 10 minutes</h5>
-            <p>
-              If you own mission critical apps and are looking for
-              predictability, we can help.
-            </p>
-          </div>
+          <div class="container capabilities ps-3 ps-lg-5 pb-5 mb-5">
+            <h3 class="text-center my-4 cap-heading">
+              Our <strong>Capabilities</strong>
+            </h3>
+            <h3 class="fw-bold mb-4">Get visibility into your systems</h3>
 
-          <div class="img-text d-none mt-3 mt-md-0" id="stabtext">
-            <h5>Stability</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
-              praesentium?
-            </p>
-          </div>
+            <img
+              class="float-md-end tab-img"
+              src="/assets/images/capabilities-laptop.png"
+              alt="monitor"
+              id="moniImg"
+            />
 
-          <div class="img-text d-none my-3 mt-md-0" id="archiText">
-            <h5>Architect</h5>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum
-              odio repudiandae quasi ratione! Quos, rem?
-            </p>
-          </div>
+            <img
+              class="float-md-end tab-img d-none"
+              src="/assets/images/stabImg.jpg"
+              alt="stability"
+              id="stabImg"
+            />
 
-          <div class="img-text d-none mt-3 mt-md-0" id="uiText">
-            <h5>UI</h5>
-            <p>Lorem ipsum dolor adipisicing elit. Deleniti, praesentium?</p>
+            <img
+              class="float-md-end tab-img d-none"
+              src="/assets/images/archiImg.jpg"
+              alt="architecture"
+              id="archiImg"
+            />
+
+            <img
+              class="float-md-end tab-img d-none"
+              src="/assets/images/uiImg.jpg"
+              alt="ui"
+              id="uiImg"
+            />
+
+            <div class="dropdown mt-3">
+              <button
+                class="btn dropdown-toggle capabilities-dropdown fw-bold"
+                type=""
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                id="btnDropdown"
+              >
+                Monitor
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" onclick="monitor()">Monitor</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" onclick="stability()">Stability</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" onclick="architecture()"
+                    >Architecture</a
+                  >
+                </li>
+
+                <li>
+                  <a class="dropdown-item" onclick="ui()"
+                    >UI<i class="fa-solid fa-chevron-down ms-1"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="img-titles fw-bold mt-3">
+              <p class="monitor active" id="monitor" onclick="monitor()">
+                Monitor
+              </p>
+              <p class="stability" id="stability" onclick="stability()">
+                Stability
+              </p>
+              <p
+                class="architecture"
+                id="architecture"
+                onclick="architecture()"
+              >
+                Architecture
+              </p>
+              <p class="ui" id="ui" onclick="ui()">
+                UI <i class="fa-solid fa-chevron-down ms-1"></i>
+              </p>
+            </div>
+
+            <div class="img-text mt-4 mt-md-0" id="monitext">
+              <h5 class="my-2">
+                Helping app owners detect problems under 10 minutes
+              </h5>
+              <p>
+                If you own mission critical apps and are looking for
+                predictability, we can help.
+              </p>
+            </div>
+
+            <div class="img-text d-none mt-3 mt-md-0" id="stabtext">
+              <h5 class="my-2">
+                Stability Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.
+              </h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti, praesentium?
+              </p>
+            </div>
+
+            <div class="img-text d-none mt-md-0" id="archiText">
+              <h5 class="my-2">
+                Architect elit. Dolorum odio ratione! Quos, rem dolor
+                adipisicing
+              </h5>
+              <p>
+                Lorem ipsum dolor adipisicing elit. Dolorum odio repudiandae
+                quasi ratione! Quos, rem?
+              </p>
+            </div>
+
+            <div class="img-text d-none mt-md-0" id="uiText">
+              <h5 class="my-2">
+                UI Lorem ipsum amet consectetur adipisicing elit. Eum,
+                repudiandae.
+              </h5>
+              <p>
+                Lorem ipsum dolor adipisicing elit. Deleniti, praesentium?
+                Dolorum odio repudiandae
+              </p>
+            </div>
+            <button class="cta-started mb-3">GET STARTED</button>
           </div>
-          <button class="cta-started mb-3">GET STARTED</button>
         </div>
 
         <!-- shapes-bg -->
@@ -388,10 +416,23 @@
         </h3>
 
         <div class="controls mb-2">
-          <i class="fa-solid fa-arrow-left-long ms-1 controls-mobile-prev"></i>
-          <i class="fa-solid fa-arrow-right-long ms-1 controls-mobile-next"></i>
+          <!-- <i class="fa-solid fa-arrow-left-long ms-1 controls-mobile-prev"></i>
+          <i class="fa-solid fa-arrow-right-long ms-1 controls-mobile-next"></i> -->
+          <div class="prev-wrapper d-flex align-items-center">
+            <img
+              src="/assets/images/team-slide-mobile-prev.png"
+              class="ms-1 controls-mobile-prev"
+              alt=""
+            />
+          </div>
+          <div class="next-wrapper d-flex align-items-center">
+            <img
+              src="/assets/images/team-slide-mobile-next.png"
+              class="ms-1 controls-mobile-next"
+              alt=""
+            />
+          </div>
         </div>
-
         <div class="wrapper swiper mobileSwiper mySwiper">
           <div class="carousel swiper-wrapper" slidesPerView="auto">
             <div class="team-profile swiper-slide">
@@ -593,6 +634,9 @@
 
       <!-- //podcast player -->
       <div class="container py-lg-5 my-lg-5 py-4 podcast">
+        <h3 class="text-center py-4">
+          Intellibus <span class="fw-bold">PodCast</span>
+        </h3>
         <iframe
           title="Intellibus Podcast"
           allowtransparency="true"
@@ -628,6 +672,7 @@
         slidesPerView: 3,
         spaceBetween: 30,
         slidesPerGroup: 3,
+        loop: true,
 
         pagination: {
           el: ".swiper-pagination",
@@ -648,6 +693,7 @@
         slidesPerView: 1,
         spaceBetween: 30,
         slidesPerGroup: 1,
+        loop: true,
 
         pagination: {
           el: ".swiper-pagination",

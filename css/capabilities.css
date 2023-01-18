@@ -1,3 +1,7 @@
+.dropdown-item {
+  cursor: pointer;
+}
+
 .capabilities {
   border: 1px solid #ced4da;
   border-radius: 7px;
@@ -7,7 +11,9 @@
   margin: 0 auto;
   z-index: 2;
 }
-
+.cap-wrapper {
+  padding: 0 1.2rem;
+}
 .tab-img {
   width: 100%;
 }
@@ -48,17 +54,16 @@
   outline: none;
   color: #0a5495;
   background-color: #eaf5ff;
-  padding: 6px 8px;
+  padding: 6px 17px;
   border-radius: 4px;
+  font-size: 13px;
+  margin-top: 0.5rem;
 }
 
 .img-titles {
   display: none !important;
 }
 @media (min-width: 576px) {
-  .cta-started {
-    margin-top: 2rem;
-  }
 }
 
 @media (min-width: 768px) {
@@ -93,19 +98,19 @@
   .capabilities {
     padding-left: 8rem;
     padding-right: 8rem;
-    max-width: 1100px !important;
+    max-width: 850px !important;
   }
   .cap-heading {
     padding-bottom: 2rem;
   }
   .cta-started {
-    margin-top: 1rem;
+    margin-top: 2.5rem;
   }
   .tab-img {
     position: absolute;
     right: 0;
     width: 300px;
-    bottom: 1rem;
+    bottom: 4rem;
   }
   .dropdown {
     display: none;
@@ -121,12 +126,13 @@
   }
 
   .capabilities {
-    height: 400px;
+    height: 460px;
   }
 
   .img-text {
     width: 55%;
     max-height: 100px;
+    max-width: 350px;
   }
 
   .active {
@@ -136,6 +142,7 @@
 
 @media (min-width: 992px) {
   .tab-img {
-    width: 350px;
+    max-width: 400px;
+    bottom: 3.7rem;
   }
 }
