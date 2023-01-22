@@ -1,8 +1,21 @@
-.team-profile {
-  max-width: 350px;
-  margin: 0 auto;
+.play-button {
+  position: abo;
+  position: absolute;
+  font-size: 72px;
+  color: white;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  right: 30%;
+  top: 200px;
 }
 
+.team-profile {
+  max-width: 280px;
+  margin: 0 auto;
+}
+.team-profile video {
+  cursor: pointer;
+}
 .mySwiper {
   position: relative;
   overflow: hidden;

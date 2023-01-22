@@ -14,6 +14,8 @@ const archiImg = document.querySelector("#archiImg");
 const stabImg = document.querySelector("#stabImg");
 const uiImg = document.querySelector("#uiImg");
 
+const btnWeb = document.querySelector("#btnWeb");
+
 function stability() {
   monitorTitle.classList.remove("active");
   stabTitle.classList.add("active");
@@ -31,6 +33,7 @@ function stability() {
   uiImg.classList.add("d-none");
 
   btn.innerHTML = "Stability";
+  btnWeb.innerHTML = "LEARN MORE";
 }
 
 function architecture() {
@@ -50,6 +53,7 @@ function architecture() {
   uiImg.classList.add("d-none");
 
   btn.innerHTML = "Architecture";
+  btnWeb.innerHTML = "LEARN MORE";
 }
 
 function ui() {
@@ -68,7 +72,8 @@ function ui() {
   archiImg.classList.add("d-none");
   uiImg.classList.remove("d-none");
 
-  btn.innerHTML = "UI";
+  btn.innerHTML = "UI ";
+  btnWeb.innerHTML = "LEARN MORE";
 }
 
 function monitor() {
@@ -88,4 +93,5 @@ function monitor() {
   uiImg.classList.add("d-none");
 
   btn.innerHTML = "Monitor";
+  btnWeb.innerHTML = "GET STARTED";
 }

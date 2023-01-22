@@ -46,6 +46,11 @@ h2 {
   font-family: "FG-semibold";
   color: #fdff2c;
   text-decoration: none;
+  padding-bottom: 2px;
+}
+
+.cta-work:hover {
+  border-bottom: 2px solid #fdff2c;
 }
 
 .nav-item a:hover {
