@@ -290,7 +290,7 @@
         <h4 class="mb-4">
           <span class="d-block"> For 11 years, Intellibus has been </span>
           advising boards & building intelligent platforms that
-          <span>world's largest financial institutions run on.</span>
+          <span>the world's largest financial institutions run on.</span>
         </h4>
         <p class="about-text">
           <span>Our strategic engagements enable Business Strategy,</span>
@@ -335,31 +335,45 @@
             <h3 class="fw-bold mb-4">Get visibility into your systems</h3>
 
             <img
-              class="float-md-end tab-img"
+              class="float-lg-end tab-img"
               src="/assets/images/capabilities-laptop.png"
               alt="monitor"
               id="moniImg"
             />
 
             <img
-              class="float-md-end tab-img d-none"
+              class="float-lg-end tab-img d-none"
               src="/assets/images/stabImg.jpg"
               alt="stability"
               id="stabImg"
             />
 
             <img
-              class="float-md-end tab-img d-none"
+              class="float-lg-end tab-img d-none"
               src="/assets/images/archiImg.jpg"
               alt="architecture"
               id="archiImg"
             />
 
             <img
-              class="float-md-end tab-img d-none"
+              class="float-lg-end tab-img d-none"
               src="/assets/images/uiImg.jpg"
               alt="ui"
               id="uiImg"
+            />
+
+            <img
+              class="float-lg-end tab-img d-none"
+              src="/assets/images/archiImg.jpg"
+              alt="ui"
+              id="perfImg"
+            />
+
+            <img
+              class="float-lg-end tab-img d-none"
+              src="/assets/images/uiImg.jpg"
+              alt="ui"
+              id="awImg"
             />
 
             <div class="dropdown mt-3">
@@ -390,6 +404,14 @@
                     >UI<i class="fa-solid fa-chevron-down ms-1"></i
                   ></a>
                 </li>
+
+                <li>
+                  <a class="dropdown-item" onclick="perf()">Performance</a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" onclick="aws()">AWS & Cloud</a>
+                </li>
               </ul>
             </div>
             <div class="img-titles fw-bold mt-3">
@@ -409,6 +431,11 @@
               <p class="ui" id="ui" onclick="ui()">
                 UI <i class="fa-solid fa-chevron-down ms-1"></i>
               </p>
+
+              <p class="performance" id="performance" onclick="performance()">
+                Performance
+              </p>
+              <p class="aws" id="aws" onclick="aws()">AWS & Cloud</p>
             </div>
 
             <div class="img-text mt-4 mt-md-0" id="monitext">
@@ -453,7 +480,31 @@
                 we can help.
               </p>
             </div>
-            <button class="cta-started mb-3" id="btnWeb">GET STARTED</button>
+
+            <div class="img-text d-none mt-md-0" id="perfText">
+              <h5 class="my-2">
+                Helping app owners reduce cycle time by 50% in < 90 Days.
+              </h5>
+              <p>
+                If you own mission-critical apps and have cycles that take 12+
+                hours, we can help.
+              </p>
+            </div>
+
+            <div class="img-text d-none mt-md-0" id="awsText">
+              <h5 class="my-2">
+                Helping app owners reduce AWS costs by 40% in < 90 Days.
+              </h5>
+              <p>
+                If you spend over $12 MM a month on AWS and want to reduce
+                costs, we can help.
+              </p>
+            </div>
+            <a href="https://monitor.intellibus.com" target="_blank"
+              ><button class="cta-started mb-3" id="btnWeb">
+                GET STARTED
+              </button></a
+            >
           </div>
         </div>
 
@@ -512,7 +563,13 @@
         <div class="wrapper swiper mobileSwiper mySwiper">
           <div class="carousel swiper-wrapper" slidesPerView="auto">
             <div class="team-profile swiper-slide">
-              <video width="100%" height="100%" loop id="videoWinkler">
+              <video
+                width="100%"
+                height="100%"
+                loop
+                id="videoWinkler"
+                poster="/assets/images/team-video-poster/winkler.png"
+              >
                 <source
                   src="/assets/videos/team-video/winkler.mp4"
                   type="video/mp4"
@@ -538,7 +595,14 @@
             </div>
 
             <div class="team-profile swiper-slide">
-              <video width="100%" height="100%" loop id="videoTurner">
+              <video
+                poster="/assets/images/team-video-poster/turner.png"
+                width="100%"
+                height="100%"
+                loop
+                id="videoTurner"
+                class="team-video"
+              >
                 <source
                   src="/assets/videos/team-video/turner.mp4"
                   type="video/mp4"
@@ -562,7 +626,13 @@
             </div>
 
             <div class="team-profile swiper-slide">
-              <video width="100%" height="100%" loop id="videoPalumbo">
+              <video
+                width="100%"
+                height="100%"
+                loop
+                id="videoPalumbo"
+                poster="/assets/images/team-video-poster/palumbo.png"
+              >
                 <source
                   src="/assets/videos/team-video/palumbo.mp4"
                   type="video/mp4"
@@ -587,7 +657,13 @@
             </div>
 
             <div class="team-profile swiper-slide">
-              <video width="100%" height="100%" loop id="videoKarra">
+              <video
+                width="100%"
+                height="100%"
+                loop
+                id="videoKarra"
+                poster="/assets/images/team-video-poster/karra.png"
+              >
                 <source
                   src="/assets/videos/team-video/karra.mp4"
                   type="video/mp4"
@@ -612,7 +688,13 @@
             </div>
 
             <div class="team-profile swiper-slide">
-              <video width="100%" height="100%" loop id="videoFabrikant">
+              <video
+                width="100%"
+                height="100%"
+                loop
+                id="videoFabrikant"
+                poster="/assets/images/team-video-poster/fabrikant.png"
+              >
                 <source
                   src="/assets/videos/team-video/fabrikant.mp4"
                   type="video/mp4"
@@ -637,7 +719,13 @@
             </div>
 
             <div class="team-profile swiper-slide">
-              <video width="100%" height="100%" loop id="videoWatal">
+              <video
+                width="100%"
+                height="100%"
+                loop
+                id="videoWatal"
+                poster="/assets/images/team-video-poster/watal.png"
+              >
                 <source
                   src="/assets/videos/team-video/watal.mp4"
                   type="video/mp4"

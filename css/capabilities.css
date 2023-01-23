@@ -98,7 +98,7 @@
   .capabilities {
     padding-left: 8rem;
     padding-right: 8rem;
-    max-width: 850px !important;
+    max-width: 1000px !important;
   }
   .cap-heading {
     padding-bottom: 2rem;
@@ -109,7 +109,7 @@
   .tab-img {
     position: absolute;
     right: 0;
-    width: 300px;
+    width: 200px;
     bottom: 4rem;
   }
   .dropdown {
@@ -142,6 +142,7 @@
 
 @media (min-width: 992px) {
   .tab-img {
+    width: 300px;
     max-width: 400px;
     bottom: 3.7rem;
   }

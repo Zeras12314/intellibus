@@ -6,7 +6,6 @@ videoWinkler.addEventListener("click", function () {
   if (videoWinkler.paused == true) {
     // Play the video
     videoWinkler.play();
-
     playBtnWinkler.classList.add("d-none");
   } else {
     // Pause the video
