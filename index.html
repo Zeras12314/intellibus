@@ -428,14 +428,27 @@
               >
                 Architecture
               </p>
-              <p class="ui" id="ui" onclick="ui()">
-                UI <i class="fa-solid fa-chevron-down ms-1"></i>
-              </p>
+              <div class="ui-drop">
+                <p class="ui" id="ui" onclick="ui()">UI&nbsp;</p>
 
-              <p class="performance" id="performance" onclick="performance()">
+                <div class="drop-ui-content">
+                  <p id="ui-down" onclick="ui()" class="mt-1">UI</p>
+                  <p
+                    id="performance-down "
+                    class="mt-1"
+                    onclick="performance()"
+                  >
+                    Performance
+                  </p>
+                  <p id="aws-down" onclick="aws()">AWS & Cloud</p>
+                </div>
+              </div>
+              <i class="fa-solid fa-chevron-down ms-1 ui-drop-chevron"></i>
+
+              <!-- <p class="performance" id="performance" onclick="performance()">
                 Performance
               </p>
-              <p class="aws" id="aws" onclick="aws()">AWS & Cloud</p>
+              <p class="aws" id="aws" onclick="aws()">AWS & Cloud</p> -->
             </div>
 
             <div class="img-text mt-4 mt-md-0" id="monitext">

@@ -2,8 +2,9 @@ const stabTitle = document.querySelector("#stability");
 const monitorTitle = document.querySelector("#monitor");
 const archiTitle = document.querySelector("#architecture");
 const uiTitle = document.querySelector("#ui");
-const perfTitle = document.querySelector("#performance");
-const awsTitle = document.querySelector("#aws");
+const perfTitle = document.querySelector("#performance-down");
+const awsTitle = document.querySelector("#aws-down");
+// const uiDown = document.querySelector("#ui-down");
 
 const stabText = document.querySelector("#stabtext");
 const moniText = document.querySelector("#monitext");
@@ -27,8 +28,8 @@ function stability() {
   stabTitle.classList.add("active");
   archiTitle.classList.remove("active");
   uiTitle.classList.remove("active");
-  perfTitle.classList.remove("active");
-  awsTitle.classList.remove("active");
+  // perfTitle.classList.remove("active");
+  // awsTitle.classList.remove("active");
 
   moniText.classList.add("d-none");
   stabText.classList.remove("d-none");
@@ -53,8 +54,8 @@ function architecture() {
   stabTitle.classList.remove("active");
   archiTitle.classList.add("active");
   uiTitle.classList.remove("active");
-  perfTitle.classList.remove("active");
-  awsTitle.classList.remove("active");
+  // perfTitle.classList.remove("active");
+  // awsTitle.classList.remove("active");
 
   moniText.classList.add("d-none");
   stabText.classList.add("d-none");
@@ -79,8 +80,8 @@ function ui() {
   stabTitle.classList.remove("active");
   archiTitle.classList.remove("active");
   uiTitle.classList.add("active");
-  perfTitle.classList.remove("active");
-  awsTitle.classList.remove("active");
+  // perfTitle.classList.remove("active");
+  // awsTitle.classList.remove("active");
 
   moniText.classList.add("d-none");
   stabText.classList.add("d-none");
@@ -98,6 +99,8 @@ function ui() {
 
   btn.innerHTML = "UI ";
   btnWeb.innerHTML = "LEARN MORE";
+
+  uiTitle.innerHTML = "UI";
 }
 
 function monitor() {
@@ -105,8 +108,8 @@ function monitor() {
   stabTitle.classList.remove("active");
   archiTitle.classList.remove("active");
   uiTitle.classList.remove("active");
-  perfTitle.classList.remove("active");
-  awsTitle.classList.remove("active");
+  // perfTitle.classList.remove("active");
+  // awsTitle.classList.remove("active");
 
   moniText.classList.remove("d-none");
   stabText.classList.add("d-none");
@@ -130,9 +133,9 @@ function performance() {
   monitorTitle.classList.remove("active");
   stabTitle.classList.remove("active");
   archiTitle.classList.remove("active");
-  uiTitle.classList.remove("active");
-  perfTitle.classList.add("active");
-  awsTitle.classList.remove("active");
+  uiTitle.classList.add("active");
+  // perfTitle.classList.add("active");
+  // awsTitle.classList.remove("active");
 
   moniText.classList.add("d-none");
   stabText.classList.add("d-none");
@@ -150,15 +153,16 @@ function performance() {
 
   btn.innerHTML = "Performance";
   btnWeb.innerHTML = "LEARN MORE";
+  uiTitle.innerHTML = "Performance";
 }
 
 function aws() {
   monitorTitle.classList.remove("active");
   stabTitle.classList.remove("active");
   archiTitle.classList.remove("active");
-  uiTitle.classList.remove("active");
-  perfTitle.classList.remove("active");
-  awsTitle.classList.add("active");
+  uiTitle.classList.add("active");
+  // perfTitle.classList.remove("active");
+  // awsTitle.classList.add("active");
 
   moniText.classList.add("d-none");
   stabText.classList.add("d-none");
@@ -176,4 +180,5 @@ function aws() {
 
   btn.innerHTML = "AWS & Cloud";
   btnWeb.innerHTML = "LEARN MORE";
+  uiTitle.innerHTML = "AWS & Cloud";
 }
