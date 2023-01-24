@@ -1,5 +1,5 @@
-.play-button {
-  position: abo;
+/* .play-button {
+ 
   position: absolute;
   font-size: 72px;
   color: white;
@@ -7,10 +7,18 @@
   cursor: pointer;
   right: 30%;
   top: 200px;
+} */
+
+.play-button {
+  position: absolute;
+  width: 70px !important;
+  right: 38%;
+  top: 290px;
+  cursor: pointer;
 }
 
 .team-profile {
-  max-width: 280px;
+  max-width: 100%;
   margin: 0 auto;
 }
 .team-profile video {
@@ -19,7 +27,7 @@
 .mySwiper {
   position: relative;
   overflow: hidden;
-  margin-left: 1rem !important;
+  margin: 0 1rem !important;
 }
 /* .wrapper {
   max-width: 1200px;
@@ -40,6 +48,7 @@
   background: #ededed;
   padding: 0.5rem 3.7rem;
   cursor: pointer;
+  width: 47%;
 }
 
 .prev-wrapper img,
@@ -104,6 +113,16 @@
   z-index: 999;
   right: 0;
   cursor: pointer;
+}
+
+@media (min-width: 576px) {
+  .team-profile {
+    max-width: 280px;
+  }
+
+  .play-button {
+    top: 220px;
+  }
 }
 
 @media (min-width: 768px) {

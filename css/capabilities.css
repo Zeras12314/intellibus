@@ -65,6 +65,8 @@
 }
 .ui-drop {
   position: relative;
+  padding-right: 1.5rem;
+  z-index: 9999;
 }
 
 .drop-ui-content {
@@ -93,7 +95,7 @@
 }
 
 .ui-drop-chevron {
-  transform: translateX(-34px);
+  transform: translateX(-55px);
   padding-top: 3px;
 }
 

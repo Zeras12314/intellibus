@@ -13,16 +13,21 @@ nav {
 .nav-item a {
   color: white;
   margin-right: 1rem;
+  padding-bottom: 1rem;
+  font-size: 20px;
 }
 
 .navbar-collapse {
-  background-color: #000000;
+  background-color: #0a5495;
   padding: 2rem;
   z-index: 99;
-}
-
-#home {
-  border-bottom: 2px solid white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-left: 0;
+  left: 0;
+  z-index: -99;
+  padding-top: 9rem !important;
 }
 
 .text-us button {
@@ -32,7 +37,7 @@ nav {
   padding: 0.5rem 1rem;
   color: white;
   border-radius: 4px;
-  font-size: 12px;
+  font-size: 16px;
   letter-spacing: 1.5px;
 }
 
@@ -42,18 +47,70 @@ nav {
   outline: none;
   box-shadow: none;
 }
+
+.nav-contact {
+  padding: 2.2rem 0;
+}
+
+.text-us {
+  margin-top: 2rem;
+}
 @media (min-width: 576px) {
+  .navbar-collapse {
+    padding-left: 3rem;
+  }
 }
 
 @media (min-width: 768px) {
+  .navbar-collapse {
+    padding-left: 4rem;
+  }
+
   .text-us button {
     padding: 0.3rem 1.2rem;
   }
 
   @media (min-width: 992px) {
+    .nav-contact {
+      padding: 0;
+    }
+
+    .text-us {
+      margin-top: 0;
+    }
+
+    .text-us button {
+      font-size: 12px;
+    }
+
+    .nav-item a {
+      padding-bottom: 0;
+    }
+    /* .navbar-collapse {
+  background-color: #0a5495;
+  padding: 2rem;
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-left: 0;
+  left: 0;
+  z-index: -99;
+  padding-top: 9rem !important;
+} */
+
+    .nav-item a {
+      font-size: 16px;
+    }
     .navbar-collapse {
+      position: static;
       background-color: transparent;
       padding: 0;
+      padding-top: 0 !important;
+    }
+
+    #home {
+      border-bottom: 2px solid white;
     }
   }
 }
