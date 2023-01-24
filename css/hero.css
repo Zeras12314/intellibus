@@ -1,9 +1,7 @@
 .slider {
-  position: relative;
   width: 100%;
-  height: 680px;
+  height: 88vh;
   overflow: hidden;
-
   top: 0 !important;
   left: 0;
   min-width: 1300px;
@@ -12,14 +10,14 @@
   width: 100%;
   overflow: hidden;
   display: block;
-  height: 680px;
-  position: relative;
+  height: 88vh;
+
   top: 0;
   position: absolute;
 }
 .carousel-text {
   left: 0;
-  bottom: 15rem;
+  bottom: 14rem;
   color: white;
   position: absolute;
   z-index: 9;
@@ -83,6 +81,24 @@ h2 {
   width: auto;
 } */
 
+.carousel-control-prev {
+  position: absolute;
+  left: 0;
+  height: 65vh;
+}
+
+.carousel-control-next {
+  position: absolute;
+  right: 0;
+  height: 65vh;
+}
+
+/* .carousel-control-next {
+  position: absolute;
+  left: 0.5rem;
+  top: 10rem;
+} */
+
 @media (min-width: 576px) {
   .slider {
     height: 100vh;
@@ -105,7 +121,7 @@ h2 {
     min-width: 900px;
   } */
   .carousel-text {
-    bottom: 170px;
+    /* bottom: 170px; */
 
     width: 50%;
   }
@@ -113,14 +129,24 @@ h2 {
   h2 {
     font-size: 36px;
   }
+
+  /* .carousel-control-prev {
+    position: static;
+    height: 100%;
+    width: 100%;
+  } */
 }
 
 @media (min-width: 992px) {
+  /* .carousel-control-next,
+  .carousel-control-prev {
+    width: 80px;
+  } */
   .slider-container {
     height: 100vh;
   }
   .carousel-text {
-    bottom: 250px;
+    bottom: 150px;
     padding-left: 0%;
     width: 50%;
   }
@@ -129,22 +155,36 @@ h2 {
     font-size: 20px;
   }
 
-  .carousel-control-prev {
+  .carousel-control-prev,
+  .carousel-control-next {
+    height: 100%;
+    width: 80px;
+  }
+
+  /* .carousel-control-prev {
+    padding-left: 0;
+  } */
+
+  /* .carousel-control-prev {
     transform: translateX(-4rem);
     overflow: hidden;
+  } */
+
+  /* .carousel-control-prev {
+    height: 100%;
   }
 
   .carousel-control-next {
     transform: translateX(4rem);
     overflow: hidden;
-  }
+  } */
 }
 
 @media (min-width: 1200px) {
   .carousel-text {
-    bottom: 300px;
+    /* bottom: 200px; */
     padding-left: 4%;
-
+    top: 23rem;
     width: 50%;
   }
 
@@ -164,29 +204,29 @@ h2 {
     padding-left: 10%;
   }
 
-  .carousel-control-prev,
+  /* .carousel-control-prev,
   .carousel-control-next {
     position: absolute;
     bottom: 25% !important;
-  }
+  } */
 }
 
 @media (min-width: 1700px) {
   .carousel-text {
-    bottom: 350px;
+    /* bottom: 350px; */
     padding-left: 12%;
   }
 }
 
 @media (min-width: 1800px) {
   .carousel-text {
-    bottom: 400px;
+    /* bottom: 400px; */
     padding-left: 15%;
   }
 }
 
 @media (min-width: 1900px) {
   .carousel-text {
-    bottom: 450px;
+    /* bottom: 450px; */
   }
 }
