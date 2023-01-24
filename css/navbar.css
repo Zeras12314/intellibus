@@ -21,7 +21,7 @@ nav {
   background-color: #0a5495;
   padding: 2rem;
   z-index: 99;
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   margin-left: 0;
@@ -71,6 +71,9 @@ nav {
   }
 
   @media (min-width: 992px) {
+    .nav-container {
+      padding: 0 5%;
+    }
     .nav-contact {
       padding: 0;
     }
