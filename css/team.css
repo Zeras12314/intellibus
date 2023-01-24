@@ -13,7 +13,7 @@
   position: absolute;
   width: 70px !important;
   right: 38%;
-  top: 290px;
+  top: 320px;
   cursor: pointer;
 }
 
@@ -121,7 +121,7 @@
   }
 
   .play-button {
-    top: 220px;
+    top: 260px;
   }
 }
 
