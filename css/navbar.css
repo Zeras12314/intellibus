@@ -71,7 +71,7 @@ nav {
 
   @media (min-width: 992px) {
     .nav-links-container {
-      z-index: -111;
+      z-index: -111 !important;
     }
     .nav-container {
       padding: 0 5%;
